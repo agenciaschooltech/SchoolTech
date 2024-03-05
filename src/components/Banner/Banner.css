@@ -1,0 +1,137 @@
+/* BANNER */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 164px 10%;
+}
+
+.banner .text-banner {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.banner .text-banner h2 {
+  font-size: 60px;
+  color: var(--primary-title-color);
+}
+
+.banner .text-banner p {
+  font-size: 24px;
+  color: var(--desc-primary-color);
+}
+
+.banner .text-banner a {
+  background-color: var(--primary-text-color);
+  padding: 20px 25px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary-title-color);
+  border-radius: 5px;
+  width: 60%;
+  margin-top: 80px;
+  transition: all 0.2s;
+}
+
+.banner .text-banner a:hover {
+  background-color: var(--primary-title-color);
+  color: var(--primary-text-color);
+}
+
+.banner .image-wallpaper {
+  width: 40%;
+  padding: 40px;
+  border-bottom-left-radius: 20%;
+  border-top-right-radius: 20%;
+
+  transition: background-color 0.3s;
+}
+
+.banner .image-wallpaper:hover {
+  background-color: var(--primary-title-color);
+}
+
+.banner .image-wallpaper img {
+  width: 100%;
+  border-radius: 32px;
+  border-bottom-left-radius: 20%;
+  border-top-right-radius: 20%;
+}
+
+@media (max-width: 1705px) {
+  .banner {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    width: 100%;
+    padding-top: 120px;
+  }
+
+  .banner .text-banner a {
+    width: 100%;
+  }
+
+  .banner .text-banner {
+    margin-top: 2rem;
+    text-align: center;
+    align-items: center;
+  }
+
+  .banner .image-wallpaper {
+    width: 50%;
+    padding: 0;
+  }
+
+  .banner .image-wallpaper:hover {
+    background-color: transparent;
+  }
+}
+
+@media (max-width: 1200px) {
+  .banner .text-banner h2 {
+    font-size: 40px;
+  }
+
+  .banner .text-banner a {
+    width: 80%;
+  }
+}
+
+@media (max-width: 900px) {
+  .banner {
+    padding-top: 220px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 700px) {
+  .banner {
+    padding-top: 120px;
+    padding-bottom: 50px;
+    width: 100%;
+  }
+
+  .banner .image-wallpaper {
+    width: 80%;
+  }
+
+  .banner .text-banner {
+    margin-top: 0;
+    display: flex;
+  }
+
+  .banner .text-banner h2 {
+    font-size: 2rem;
+  }
+
+  .banner .text-banner p {
+    font-size: 1rem;
+  }
+
+  .banner .text-banner a {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+    margin-top: 1rem;
+  }
+}

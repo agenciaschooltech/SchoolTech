@@ -1,0 +1,52 @@
+.cursos-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 64px 0;
+}
+
+.cursos-container h2 {
+  width: 35%;
+  font-size: 40px;
+  border-bottom: 1px solid var(--primary-title-color);
+  padding-bottom: 32px;
+  margin: 50px 0;
+  color: var(--primary-title-color);
+}
+
+.cursos {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1200px) {
+  .cursos-container h2 {
+    width: 60%;
+  }
+  .cursos {
+    gap: 5rem;
+  }
+}
+
+@media (max-width: 1322px) {
+  .cursos-container h2 {
+    width: 70%;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 700px) {
+  .cursos-container h2 {
+    font-size: 1.3rem;
+    padding-bottom: 14px;
+  }
+
+  .cursos {
+    width: 100%;
+    padding-inline: 20px;
+  }
+}

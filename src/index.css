@@ -1,0 +1,39 @@
+/* CONFIG GLOBAL */
+
+:root {
+  --primary-text-color: #a0a0c4;
+  --primary-title-color: #2a1f5e;
+  --header-background-color: white;
+  --background-primary-color: rgb(17, 23, 45);
+  --desc-primary-color: rgb(125, 137, 164);
+  --presseble-button-color: rgb(69, 69, 69);
+  --color-border-light: rgba(255, 255, 255, 0.3);
+  --color-border-light-hover: rgb(201, 201, 201);
+  --color-dark-primary: #141414;
+  --banner-color-normal: rgb(35, 48, 66);
+  --banner-color-hover: #233a73;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+button, input {
+  outline: none;
+  border: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  cursor: default;
+}

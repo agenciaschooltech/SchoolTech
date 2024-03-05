@@ -1,0 +1,132 @@
+/* About US */
+
+.sobre-nos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 220px 80px;
+
+  background-color: var(--background-primary-color);
+}
+
+.text-sobre-nos {
+  display: flex;
+  gap: 60px;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  justify-content: center;
+}
+
+.text-sobre-nos h2 {
+  color: white;
+  font-size: 50px;
+}
+
+.text-sobre-nos p {
+  color: var(--desc-primary-color);
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.btn-agendar {
+  width: 50%;
+  background-color: var(--primary-text-color);
+  color: var(--background-primary-color);
+  padding: 20px 5px;
+  text-align: center;
+  margin-top: 40px;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.btn-agendar:hover {
+  text-decoration: underline;
+}
+
+.video-youtube {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.video-youtube h3 {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1800px) {
+  .sobre-nos .text-sobre-nos a {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1705px) {
+  .sobre-nos {
+    flex-direction: column;
+    gap: 120px;
+    align-items: flex-start;
+    padding: 5rem 1rem;
+  }
+
+  .sobre-nos .text-sobre-nos {
+    width: 100%;
+    padding-inline: 5rem;
+  }
+
+  .sobre-nos .video-youtube {
+    padding-left: 5rem;
+    width: 100%;
+    align-items: flex-end;
+  }
+
+  .sobre-nos .video-youtube iframe {
+    width: 60%;
+    height: 450px;
+  }
+
+  .sobre-nos .video-youtube h3 {
+    text-align: start;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 1300px) {
+  .sobre-nos .text-sobre-nos {
+    text-align: center;
+    align-items: center;
+  }
+  .sobre-nos .video-youtube {
+    display: none;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 700px) {
+  .sobre-nos {
+    padding: 2.5rem 0;
+  }
+  .sobre-nos .text-sobre-nos {
+    text-align: left;
+    align-items: start;
+    padding: 3rem 1rem;
+  }
+
+  .sobre-nos .text-sobre-nos h2 {
+    font-size: 2rem;
+  }
+
+  .sobre-nos .text-sobre-nos p {
+    font-size: 1rem;
+  }
+
+  .sobre-nos .text-sobre-nos a {
+    font-size: 0.8rem;
+    margin-top: 0;
+  }
+}
