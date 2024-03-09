@@ -2,14 +2,11 @@ import './Home.css'
 
 import Banner from "../../components/Banner";
 import Course from "../../components/Course";
-import Header from "../../components/Header";
-import Footer from '../../components/Footer';
 
 
 function Home() {
   return (
     <div className="home-container">
-      <Header />
       <Banner />
       <section className="sobre-nos">
         <div className="text-sobre-nos">
@@ -32,7 +29,6 @@ function Home() {
         </div>
       </section>
       <Course />
-      <Footer />
     </div>
   );
 }

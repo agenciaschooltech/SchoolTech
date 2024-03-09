@@ -1,0 +1,271 @@
+.container-about {
+  width: 100%;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+#title-about-us {
+  color: var(--primary-title-color);
+  font-size: 3rem;
+  text-align: center;
+  margin: 5rem 0;
+}
+
+.who {
+  padding: 2rem;
+  background-color: var(--primary-text-color);
+  width: 50%;
+  border-bottom-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  min-height: 300px;
+  transition: all 0.2s;
+}
+
+.who:hover {
+  background-color: var(--primary-title-color);
+}
+
+.who .who-container {
+  background-color: white;
+  padding: 2rem;
+  border-bottom-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.who-container h2 {
+  color: var(--primary-title-color);
+  font-size: 3rem;
+}
+
+.who-container p {
+  color: var(--primary-text-color);
+  font-size: 1.5rem;
+}
+
+/* Oque Fazemos */
+
+.what-do {
+  margin-left: 50%;
+  margin-top: 5rem;
+  padding: 2rem;
+  background-color: var(--primary-text-color);
+  width: 50%;
+  border-bottom-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  min-height: 300px;
+  transition: all 0.2s;
+}
+
+.what-do:hover {
+  background-color: var(--primary-title-color);
+}
+
+.what-do .what-do-container {
+  background-color: white;
+  padding: 2rem;
+  border-bottom-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.what-do-container h2 {
+  color: var(--primary-title-color);
+  font-size: 3rem;
+}
+
+.what-do-container p {
+  color: var(--primary-text-color);
+  font-size: 1.5rem;
+}
+
+/* Fundadores */
+
+.fundadores {
+  width: 100%;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.fundadores h2 {
+  font-size: 2.5rem;
+  color: var(--primary-text-color);
+  margin-block: 3rem;
+}
+
+.fundadores .card-fundadores-container {
+  display: flex;
+  width: 100%;
+  margin-top: 2rem;
+  justify-content: center;
+  gap: 10%;
+}
+
+.fundadores .card-fundadores-container .card-fund-container {
+  padding: 4rem 2rem;
+  border-bottom-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid var(--primary-text-color);
+  transition: background-color 0.2s;
+}
+
+.card-fund-container:hover {
+  background-color: var(--primary-text-color);
+  border: 1px solid var(--primary-text-color);
+}
+
+.card-fund {
+  background-color: white;
+  padding: 2rem;
+  border-bottom-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  cursor: pointer;
+}
+
+.fundadores .card-fundadores-container .card-fund-container img {
+  width: 100%;
+  margin-block: 2rem;
+  border-radius: 1.5rem;
+}
+
+.fundadores .card-fundadores-container .card-fund-container h3 {
+  font-size: 2rem;
+  color: var(--primary-title-color);
+  cursor: pointer;
+}
+
+.card-fund-container p {
+  font-size: 1.2rem;
+  color: var(--desc-primary-color);
+  margin-top: 2rem;
+  height: 100px;
+  cursor: pointer;
+}
+
+/* Video */
+
+.video-about-us {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 5%;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.video-about-us h2 {
+  color: var(--primary-title-color);
+  font-size: 3.5rem;
+  width: 50%;
+}
+
+.video {
+  padding: 3rem;
+  width: 40%;
+  border-bottom-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  transition: all 0.2s;
+}
+
+.video:hover {
+  background-color: var(--primary-text-color);
+}
+
+.video .video-container {
+  background-color: white;
+  padding: 3rem;
+  border-bottom-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 2600px) {
+  .video-about-us {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .video {
+    width: 50%;
+  }
+
+  .video iframe {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1700px) {
+  .fundadores .card-fundadores-container .card-fund-container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .who, .what-do {
+    width: 100%;
+  }
+
+  .what-do {
+    margin-left: 0;
+  }
+
+  .fundadores .card-fundadores-container {
+    flex-wrap: wrap;
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 900px) {
+  #title-about-us {
+    font-size: 2rem;
+    margin-top: 6rem;
+  }
+
+  .who-container h2, .what-do-container h2 {
+    font-size: 2rem;
+  }
+
+  .fundadores .card-fundadores-container .card-fund-container {
+    width: 100%;
+  }
+
+  .card-fund {
+    padding: 4rem 2rem;
+  }
+
+  .video-about-us {
+    width: 80%;
+  }
+
+  .video {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .container-about {
+    padding: 80px 30px;
+  }
+}
