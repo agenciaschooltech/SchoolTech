@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Header />
-      <AboutUs />
+      <Home />
       <Footer />
     </>
   );
