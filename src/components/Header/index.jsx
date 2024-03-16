@@ -3,14 +3,14 @@ import './Header.css'
 function Header() {
   return (
     <header>
-      <a href="#" style={{display: 'flex', alignItems: 'center'}}>
+      <a href="/" style={{display: 'flex', alignItems: 'center'}}>
         <h1>SCHOOL TECH</h1>
       </a>
 
       <nav>
         <ul>
           <li>
-            <a href="#">Cursos</a>
+            <a href='#'>Cursos</a>
           </li>
           {/* <li>
             <a href="#">Serviços</a>
@@ -19,7 +19,7 @@ function Header() {
             <a href="#">Professores</a>
           </li>
           <li>
-            <a href="#">Sobre Nós</a>
+            <a href='/aboutus' >Sobre Nós</a>
           </li>
           <li>
             <a href="#">Contatos</a>
