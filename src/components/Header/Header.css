@@ -1,11 +1,12 @@
 /* HEADER */
 header {
-  position: fixed;
+  position: sticky;
+  top:0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  height: 100px;
+  height: 6.25rem;
   width: 100%;
 
   padding: 0 5%;
@@ -15,20 +16,20 @@ header {
 header a h1 {
   color: var(--primary-title-color);
   font-weight: bold;
-  font-size: 36px;
+  font-size: 2.25rem;
   cursor: pointer;
 }
 
 header ul {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 1.5rem;
 }
 
 header ul li a {
-  font-size: 24px;
+  font-size: 1.5rem;
   color: var(--primary-text-color);
-  padding: 15px 18px;
+  padding: 0.9rem 1.125re;
 
   transition: all 0.2s;
 }
@@ -38,15 +39,18 @@ header ul li a:hover {
   color: var(--presseble-button-color);
 }
 
+#btn-contact {
+  margin-inline: 1rem;
+}
+
 #btn-contact a {
   background-color: var(--primary-text-color);
-  padding: 20px 30px;
+  padding: 1.25rem 1.875rem;
   text-align: center;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
   color: var(--primary-title-color);
-  border-radius: 5px;
-  margin-left: 100px;
+  border-radius: 0.3rem;
 }
 
 #btn-contact a:hover {
@@ -56,12 +60,8 @@ header ul li a:hover {
 }
 
 @media (max-width: 1500px) {
-  header {
-    position: absolute;
-  }
-
   header nav ul {
-    gap: 0;
+    gap: 1.5rem;
   }
 
   header nav ul li a {
@@ -75,7 +75,7 @@ header ul li a:hover {
 
 @media (max-width: 900px) {
   header {
-    position: absolute;
+    height: min-content;
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
@@ -93,7 +93,7 @@ header ul li a:hover {
   }
 
   header nav ul li a {
-    font-size: 1.7rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -123,11 +123,17 @@ header ul li a:hover {
   }
 
   header nav ul li a {
-    font-size: 0.8rem;
+    font-size: 1rem;
     padding: 0;
   }
 
   header nav ul li a:hover {
     border: none;
+  }
+}
+
+@media (max-width: 300px) {
+  header nav ul li a {
+    font-size: 0.8rem;
   }
 }

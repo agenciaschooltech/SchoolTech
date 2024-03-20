@@ -1,0 +1,38 @@
+.item-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+    padding-block: .9rem;
+    gap: 1rem;
+    cursor: pointer;
+    border-bottom: 1px solid #d3d3ed20;
+}
+
+.item-container:hover {
+    backdrop-filter: brightness(.8);
+}
+
+.selected {
+    backdrop-filter: brightness(1.5);
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    color: #eaeeff;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.duration {
+    color: #9d9dba;
+    font-size: 1rem;
+}
+
+.icon {
+    color: #dbe5ff;
+}

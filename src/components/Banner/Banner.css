@@ -2,37 +2,40 @@
 .banner {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
-  padding: 164px 10%;
+  height: calc(100dvh - 100px);
+  padding: 0 5%;
+  gap: 0.625rem;
 }
 
 .banner .text-banner {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 32px;
+  gap: 2rem;
 }
 
 .banner .text-banner h2 {
-  font-size: 60px;
+  font-size: 3.75rem;
   color: var(--primary-title-color);
 }
 
 .banner .text-banner p {
-  font-size: 24px;
+  font-size: 1.5rem;
   color: var(--desc-primary-color);
 }
 
 .banner .text-banner a {
   background-color: var(--primary-text-color);
-  padding: 20px 25px;
+  padding: 1.25rem 1.56rem;
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
   color: var(--primary-title-color);
   border-radius: 5px;
   width: 60%;
-  margin-top: 80px;
+  margin-top: 5rem;
   transition: all 0.2s;
 }
 
@@ -43,7 +46,7 @@
 
 .banner .image-wallpaper {
   width: 40%;
-  padding: 40px;
+  padding: 2.5rem;
   border-bottom-left-radius: 20%;
   border-top-right-radius: 20%;
 
@@ -56,30 +59,36 @@
 
 .banner .image-wallpaper img {
   width: 100%;
-  border-radius: 32px;
+  border-radius: 2rem;
   border-bottom-left-radius: 20%;
   border-top-right-radius: 20%;
 }
 
-@media (max-width: 1705px) {
+/* screen width < 1400 */
+
+@media screen and (max-width: 1400px) {
   .banner {
     flex-wrap: wrap-reverse;
     justify-content: center;
     width: 100%;
-    padding-top: 120px;
+    height: calc(100dvh);
   }
-
-  .banner .text-banner a {
-    width: 100%;
-  }
-
+  
   .banner .text-banner {
-    margin-top: 2rem;
+    transform: translate(0, -4rem);
     text-align: center;
     align-items: center;
   }
 
+  .banner .text-banner a {
+    width: 100%;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+
   .banner .image-wallpaper {
+    z-index: -1;
+    transform: translate(0, 5rem);
     width: 50%;
     padding: 0;
   }
@@ -89,9 +98,11 @@
   }
 }
 
-@media (max-width: 1200px) {
+/* screen width < 1200px */
+
+@media screen and (max-width: 1200px) {
   .banner .text-banner h2 {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 
   .banner .text-banner a {
@@ -99,16 +110,10 @@
   }
 }
 
-@media (max-width: 900px) {
-  .banner {
-    padding-top: 220px;
-  }
-}
+/* screen width < 700px */
 
-@media (min-width: 300px) and (max-width: 700px) {
+@media screen and (max-width: 700px) {
   .banner {
-    padding-top: 120px;
-    padding-bottom: 50px;
     width: 100%;
   }
 
@@ -117,7 +122,6 @@
   }
 
   .banner .text-banner {
-    margin-top: 0;
     display: flex;
   }
 
@@ -132,6 +136,25 @@
   .banner .text-banner a {
     font-size: 0.9rem;
     padding: 0.8rem;
-    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .banner .text-banner {
+    transform: translate(0, -4rem);
+    gap: 1rem;
+  }
+
+  .banner .text-banner h2 {
+    font-size: 1.4rem;
+  }
+
+  .banner .text-banner p {
+    font-size: 0.9rem;
+  }
+
+  .banner .text-banner a {
+    font-size: 0.9rem;
+    padding: 0.8rem;
   }
 }

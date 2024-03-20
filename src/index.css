@@ -12,6 +12,8 @@
   --color-dark-primary: #141414;
   --banner-color-normal: rgb(35, 48, 66);
   --banner-color-hover: #233a73;
+  --course-video-list-bg: linear-gradient(0deg, rgb(12, 19, 39) 0%, rgb(16, 26, 56) 50%, rgb(48, 70, 144) 100%);
+  --course-video-bg: rgb(19, 23, 64);
 }
 
 * {
@@ -36,4 +38,27 @@ a {
 
 h1, h2, h3, h4, h5, h6, p {
   cursor: default;
+}
+
+/* SCROLLBAR */
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-title-color) rgb(223, 223, 223);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgb(223, 223, 223);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--primary-title-color);
+  border-radius: 20px;
+  border: 3px solid rgb(223, 223, 223);
 }
