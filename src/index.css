@@ -12,8 +12,9 @@
   --color-dark-primary: #141414;
   --banner-color-normal: rgb(35, 48, 66);
   --banner-color-hover: #233a73;
-  --course-video-list-bg: linear-gradient(0deg, rgb(12, 19, 39) 0%, rgb(16, 26, 56) 50%, rgb(48, 70, 144) 100%);
+  --course-video-list-bg: linear-gradient(0deg, rgb(39, 36, 82) 0%, rgb(16, 26, 56) 50%, rgb(36, 57, 125) 100%);
   --course-video-bg: rgb(19, 23, 64);
+  --course-details-header-bg: linear-gradient(90deg, rgb(36, 57, 125) 0%, rgb(16, 26, 56) 50%, rgb(39, 36, 82) 100%);
 }
 
 * {

@@ -1,9 +1,10 @@
 .item-container {
+    transition: backdrop-filter .2s;
     width: 100%;
     display: flex;
     align-items: center;
-    padding: .5rem;
-    padding-block: .9rem;
+    padding-inline: 1rem;
+    padding-block: 1.5rem;
     gap: 1rem;
     cursor: pointer;
     border-bottom: 1px solid #d3d3ed20;
@@ -24,15 +25,45 @@
 
 .title {
     color: #eaeeff;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 500;
 }
 
 .duration {
     color: #9d9dba;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
-.icon {
+.play-icon {
+    width: 40px;
+    height: 40px;
     color: #dbe5ff;
+}
+
+.lamp-icon {
+    width: 45px;
+    height: 45px;
+    color: #dbe5ff;
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 1.1rem;
+    }
+
+    .duration {
+        font-size: .8rem;
+    }
+
+    .play-icon {
+        width: 35px;
+        height: 35px;
+        color: #dbe5ff;
+    }
+    
+    .lamp-icon {
+        width: 40px;
+        height: 40px;
+        color: #dbe5ff;
+    }
 }

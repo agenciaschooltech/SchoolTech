@@ -15,11 +15,11 @@ export default function CourseVideoItem({ title, duration, introduction = false,
         >
             {
                 introduction
-                    ? <LampIcon className="icon" width={40} height={40}/>
-                    : <PlayIcon className="icon" width={40} height={40} />
+                    ? <LampIcon className="lamp-icon"/>
+                    : <PlayIcon className="play-icon"/>
             }
             <span className="item-info">
-                <label className="title">{title}</label>
+                <span className="title">{title}</span>
                 { duration && <i className="duration">Duração: {duration}</i> }
             </span>
         </span>
