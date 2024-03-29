@@ -6,7 +6,7 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 5;
-  height: 6.25rem;
+  height: 5rem;
   width: 100%;
   padding: 0 5%;
   background-color: var(--header-background-color);
@@ -16,7 +16,7 @@ header {
 header a h1 {
   color: var(--primary-title-color);
   font-weight: bold;
-  font-size: 2.25rem;
+  font-size: 2rem;
   cursor: pointer;
 }
 
@@ -27,7 +27,7 @@ header ul {
 }
 
 header ul li a {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: var(--primary-text-color);
   padding: 0.9rem 1.125re;
 
@@ -47,7 +47,7 @@ header ul li a:hover {
   background-color: var(--primary-text-color);
   padding: 1.25rem 1.875rem;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
   color: var(--primary-title-color);
   border-radius: 0.3rem;
@@ -65,7 +65,7 @@ header ul li a:hover {
   }
 
   header nav ul li a {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   #btn-contact {
@@ -108,7 +108,7 @@ header ul li a:hover {
   }
   
   header a h1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   header nav {

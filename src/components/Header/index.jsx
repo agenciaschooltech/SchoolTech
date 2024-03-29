@@ -1,6 +1,22 @@
 import './Header.css'
 
 function Header() {
+
+  const isLoggedIn = true;
+
+  const loggedInItems = [
+    ['Meus Cursos', '#'],
+    ['Vitrine de Cursos', '#'],
+    ['Certificados', '#'],
+  ]
+
+  const loggedOutItems = [
+    ['Cursos', '#'],
+    ['Professores', '#'],
+    ['Sobre Nós', '/aboutus'],
+    ['Contatos', '#'],
+  ]
+
   return (
     <header>
       <a href="/" style={{display: 'flex', alignItems: 'center'}}>
@@ -9,21 +25,19 @@ function Header() {
 
       <nav>
         <ul>
-          <li>
-            <a href='#'>Cursos</a>
-          </li>
-          {/* <li>
-            <a href="#">Serviços</a>
-          </li> */}
-          <li>
-            <a href="#">Professores</a>
-          </li>
-          <li>
-            <a href='/aboutus' >Sobre Nós</a>
-          </li>
-          <li>
-            <a href="#">Contatos</a>
-          </li>
+          {
+            isLoggedIn
+              ? loggedInItems.map(([title, url], i) => 
+                <li key={i+"."+title}>
+                  <a href={url}>{title}</a>
+                </li>
+              )
+              : loggedOutItems.map(([title, url], i) => 
+              <li key={i+"."+title}>
+                <a href={url}>{title}</a>
+              </li>
+            )
+          }
           <li id="btn-contact">
             <a href="#">Agendar Mentoria</a>
           </li>
