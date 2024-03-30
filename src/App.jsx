@@ -10,7 +10,7 @@ function App() {
       display: 'flex', 
       flexDirection: 'column', 
       justifyContent: 'space-between', 
-      minHeight: '100dvh',
+      minHeight: '100vh',
     }}>
       <Header />
       <RouteManager />

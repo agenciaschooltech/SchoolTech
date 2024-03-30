@@ -18,12 +18,12 @@ function Header() {
   ]
 
   return (
-    <header>
+    <header className='page-header'>
       <a href="/" style={{display: 'flex', alignItems: 'center'}}>
         <h1>SCHOOL TECH</h1>
       </a>
 
-      <nav>
+      <nav className='page-header-nav'>
         <ul>
           {
             isLoggedIn

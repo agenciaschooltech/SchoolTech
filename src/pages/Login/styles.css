@@ -1,7 +1,7 @@
 .login-page{
     display: flex;
     justify-content: center;
-    height: calc(100dvh - 100px);
+    height: calc(100vh - 100px);
     padding-top: 100px;
     width: 100%;
 }
