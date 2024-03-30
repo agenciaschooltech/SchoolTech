@@ -5,8 +5,8 @@ function Header() {
   const isLoggedIn = true;
 
   const loggedInItems = [
-    ['Meus Cursos', '#'],
-    ['Vitrine de Cursos', '#'],
+    ['Meus Cursos', '/my-courses'],
+    ['Vitrine de Cursos', '/courses-showcase'],
     ['Certificados', '#'],
   ]
 

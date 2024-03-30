@@ -17,7 +17,7 @@ function Banner() {
       </div>
 
       <div className="image-wallpaper">
-        <img src={HeroRightBannerImg} alt="Imagem de códigos de programação" />
+        <img src={HeroRightBannerImg} alt="Logo School Tech" />
       </div>
     </section>
   );

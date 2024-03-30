@@ -1,5 +1,9 @@
 /* About US */
 
+.home-container {
+  overflow-x: hidden;
+}
+
 .sobre-nos {
   display: flex;
   justify-content: space-between;

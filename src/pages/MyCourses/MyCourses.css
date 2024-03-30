@@ -1,0 +1,9 @@
+a {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: filter .3s;
+}
+
+a:hover {
+    filter: brightness(2)
+}
