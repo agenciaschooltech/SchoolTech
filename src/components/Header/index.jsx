@@ -3,6 +3,21 @@ import BtnPrimary from "../BtnPrimary";
 import "./Header.scss";
 
 function Header() {
+  const isLoggedIn = true;
+
+  const loggedInItems = [
+    ["Meus Cursos", "/my-courses"],
+    ["Vitrine de Cursos", "/courses-showcase"],
+    ["Certificados", "#"],
+  ];
+
+  const loggedOutItems = [
+    ["Cursos", "#"],
+    ["Professores", "#"],
+    ["Sobre Nós", "/aboutus"],
+    ["Contatos", "#"],
+  ];
+
   return (
     <header>
       <a href="/">

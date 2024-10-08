@@ -3,7 +3,7 @@
     display: flex;
     flex-grow: 1;
     width: 100%;
-    height: calc(100dvh - 100px);
+    height: calc(100vh - 100px);
     overflow-y: hidden;
 }
 
@@ -34,26 +34,28 @@
     width: 100%;
     display: flex;
     align-items: center;
-    padding-inline: 3rem;
-    padding-block: 4.1rem;
+    padding-inline: 2rem;
+    padding-block: 3rem;
     font-weight: 600;
 }
 
 .list-header {
+    display: flex;
+    align-items: center;
     color: #e3e7ff;
     font-weight: 600;
-    font-size: 3.2rem;
     text-align: center;
-    padding-block: 2.4rem;
+    padding-inline: 1rem;
+    padding-block: 2rem;
     border-bottom: 2px solid #d3d3ed43;
 }
 
 .course-title {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .lesson-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .toggle-button {
@@ -80,28 +82,28 @@
 
 @media screen and (max-width: 1200px) {
     .course-title {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     
     .lesson-title {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 }
 
 @media screen and (max-width: 1000px) {
     .course-title {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
     }
     
     .lesson-title {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
     }
 }
 
 @media screen and (max-width: 768px) {
     .list {
         width: 60%;
-        height: calc(100dvh - 100px);
+        height: calc(100vh - 100px);
         position: absolute;
         z-index: 2;
         top: 0;
@@ -125,23 +127,24 @@
     }
 
     .details-header {
-        padding-top: 1.3rem;
-        padding-bottom: 2rem;
-        padding-left: 3rem;
-        padding-right: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1.7rem;
+        padding-left: 2.7rem;
+        padding-right: .7rem;
     }
 
     .course-title {
-        font-size: 1.7rem;
+        font-size: 1.3rem;
     }
     
     .lesson-title {
-        font-size: 1.7rem;
+        font-size: 1.3rem;
     }
 
     .list-header {
-        padding-top: 1.3rem;
-        padding-left: 1.5rem;
+        padding-top: 1.2rem;
+        padding-bottom: 2rem;
+        padding-left: 3.5rem;
     }
     
 }
@@ -152,10 +155,10 @@
     }
 
     .course-title {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     
     .lesson-title {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 }

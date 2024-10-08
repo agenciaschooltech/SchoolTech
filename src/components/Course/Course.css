@@ -22,6 +22,7 @@
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
+  gap: 2.5rem;
 }
 
 @media (max-width: 1200px) {
@@ -29,7 +30,7 @@
     width: 60%;
   }
   .cursos {
-    gap: 5rem;
+    gap: 2.2rem;
   }
 }
 
@@ -47,7 +48,7 @@
 
   .cursos {
     width: 100%;
-    padding-inline: 1.25rem;
+    gap: 1.8rem;
   }
 }
 

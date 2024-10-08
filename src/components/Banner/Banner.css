@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: calc(100dvh - 100px);
+  height: calc(100vh - 100px);
   padding: 0 5%;
   gap: 10rem;
 }
@@ -17,25 +17,24 @@
 }
 
 .banner .text-banner h2 {
-  font-size: 3.75rem;
+  font-size: 3.5rem;
   color: var(--primary-title-color);
 }
 
 .banner .text-banner p {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: var(--desc-primary-color);
 }
 
 .banner .text-banner a {
   background-color: var(--primary-text-color);
-  padding: 1.25rem 1.56rem;
+  padding: 1.25rem 3rem;
+  width: fit-content;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.25rem;
   font-weight: bold;
   color: var(--primary-title-color);
   border-radius: 5px;
-  width: 60%;
-  margin-top: 5rem;
   transition: all 0.2s;
 }
 
@@ -45,7 +44,7 @@
 }
 
 .banner .image-wallpaper {
-  width: 40%;
+  width: 45%;
   padding: 2.5rem;
   border-bottom-left-radius: 20%;
   border-top-right-radius: 20%;
@@ -66,7 +65,7 @@
 
 /* screen width < 1400 */
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1200px) {
   .banner {
     flex-wrap: wrap-reverse;
     justify-content: center;
@@ -77,21 +76,26 @@
   }
 
   .banner .text-banner {
-    transform: translate(0, -4rem);
+    transform: translate(0, -5rem);
+    padding-bottom: 2rem;
     text-align: center;
     align-items: center;
   }
 
+  .banner .text-banner h2 {
+    font-size: 2.5rem;
+  }
+
   .banner .text-banner a {
-    width: 100%;
+    width: 80%;
     margin-top: 2rem;
     font-size: 1.5rem;
   }
 
   .banner .image-wallpaper {
     z-index: -1;
-    transform: translate(0, 5rem);
-    width: 50%;
+    transform: translate(0, 4rem);
+    width: 55%;
     padding: 0;
   }
 
@@ -100,7 +104,7 @@
   }
 }
 
-/* screen width < 1200px */
+/* screen width < 1000px */
 
 @media screen and (max-width: 1200px) {
   .banner {
@@ -111,9 +115,22 @@
   .banner .text-banner {
     padding-inline: 0.2rem;
   }
+}
 
-  .banner .text-banner a {
-    width: 80%;
+/* screen width < 900px */
+
+@media screen and (max-width: 900px) {
+  .banner .image-wallpaper {
+    width: 70%;
+    transform: translate(0, 3rem);
+  }
+}
+
+/* screen width < 750px */
+
+@media screen and (max-width: 750px) {
+  .banner .image-wallpaper {
+    transform: translate(0, 2rem);
   }
 }
 
@@ -148,7 +165,7 @@
 
 @media screen and (max-width: 400px) {
   .banner .text-banner {
-    transform: translate(0, -4rem);
+    /* transform: translate(0, -4rem); */
     gap: 1rem;
   }
 
