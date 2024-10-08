@@ -1,0 +1,144 @@
+.resume-course {
+  padding: 5rem 10%;
+  .img-prefacio {
+    width: 25%;
+    img {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .img-and-title-prefacio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10%;
+
+    .img-and-title-text {
+      h2 {
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        color: var(--primary-title-color);
+      }
+
+      .info-course {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 4rem;
+
+        p {
+          border: 1px solid var(--primary-title-color);
+          padding: 1rem 1.3rem;
+          border-radius: 1rem;
+        }
+      }
+    }
+  }
+
+  .desc-course {
+    h3 {
+      margin-bottom: 0.8rem;
+      font-size: 1.5rem;
+      color: var(--primary-title-color);
+    }
+
+    p {
+      color: var(--desc-primary-color);
+      margin-bottom: 2rem;
+      width: 50%;
+    }
+
+    ul {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 4rem;
+      li {
+        border: 1px solid var(--primary-title-color);
+        padding: 1rem 1.8rem;
+        border-radius: 1rem;
+      }
+    }
+  }
+
+  .btn-resume-course {
+    display: flex;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .resume-course {
+    .img-and-title-prefacio {
+      padding-right: 0;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .resume-course {
+    .img-and-title-prefacio {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+
+      .img-prefacio {
+        margin-bottom: 4rem;
+        width: 50%;
+      }
+
+      .img-and-title-text {
+        .info-course {
+          flex-wrap: wrap;
+        }
+      }
+    }
+
+    .desc-course {
+      p {
+        width: 100%;
+      }
+      ul {
+        flex-wrap: wrap;
+      }
+    }
+
+    .btn-resume-course {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .resume-course {
+    padding-inline: 10%;
+    .img-and-title-prefacio {
+      .img-prefacio {
+        width: 100%;
+      }
+    }
+    .btn-resume-course {
+      justify-content: space-around;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .resume-course {
+    .img-and-title-prefacio {
+      .img-and-title-text {
+        h2 {
+          font-size: 1.5rem;
+          text-align: center;
+        }
+      }
+    }
+
+    .desc-course {
+      h3 {
+        text-align: center;
+      }
+      p {
+        margin-bottom: 3rem;
+      }
+    }
+  }
+}

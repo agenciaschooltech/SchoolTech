@@ -1,0 +1,121 @@
+.container-about {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .section-duvidas {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .title-about-us {
+    color: var(--primary-title-color);
+    font-size: 3rem;
+    text-align: center;
+    margin-block: 6rem;
+  }
+
+  .thanks {
+    p {
+      text-align: center;
+    }
+  }
+
+  .comentarios-alunos-container {
+    background-color: var(--background-primary-color);
+
+    .title-about-us {
+      color: white;
+    }
+
+    .all-messages {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 5rem;
+      margin-bottom: 4rem;
+    }
+  }
+
+  .btn-top {
+    display: flex;
+    justify-content: center;
+    margin-block: 5rem;
+  }
+
+  .thanks {
+    padding-inline: 15%;
+    p {
+      color: var(--primary-text-color);
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .container-about {
+    .comentarios-alunos-container {
+      .title-about-us {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .container-about {
+    .title-about-us {
+      font-size: 2.5rem;
+    }
+
+    .thanks {
+      padding-inline: 5%;
+      p {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .container-about {
+    .comentarios-alunos-container {
+      .title-about-us {
+        font-size: 2rem;
+      }
+    }
+
+    .title-about-us {
+      font-size: 2rem;
+    }
+
+    .thanks {
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .container-about {
+    .comentarios-alunos-container {
+      .title-about-us {
+        font-size: 1.5rem;
+      }
+    }
+
+    .title-about-us {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .container-about {
+    .title-about-us {
+      font-size: 1.2rem;
+    }
+  }
+}

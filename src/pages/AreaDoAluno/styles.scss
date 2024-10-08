@@ -1,0 +1,68 @@
+.area-do-aluno {
+  position: relative;
+  width: 100%;
+  min-height: 40rem;
+  padding-left: 5rem;
+
+  .side-bar {
+    position: absolute;
+    left: 0;
+    width: 6rem;
+    height: 100%;
+    background-color: var(--primary-title-color);
+    display: flex;
+    flex-direction: column;
+    transition: width 0.5s;
+
+    &:hover {
+      width: 400px;
+      align-items: start;
+    }
+
+    .btn-side-bar {
+      display: flex;
+      align-items: center;
+      padding-bottom: 0.5rem;
+
+      padding-inline: 1rem;
+      padding-block: 2rem;
+      width: 100%;
+      transition: background-color 0.2s;
+      cursor: pointer;
+
+      &:hover {
+        font-weight: bold;
+        background-color: rgb(57, 57, 135);
+      }
+
+      button {
+        color: white;
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+
+      p {
+        color: white;
+        font-size: 1.3rem;
+        margin-left: 2rem;
+        min-width: 8rem;
+        cursor: pointer;
+        display: none;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      .show {
+        display: flex;
+      }
+    }
+  }
+
+  .content-page {
+    padding: 4rem;
+  }
+}

@@ -1,53 +1,3 @@
-.container-about {
-  width: 100%;
-  padding: 50px 100px;
-  display: flex;
-  flex-direction: column;
-}
-
-#title-about-us {
-  color: var(--primary-title-color);
-  font-size: 3rem;
-  text-align: center;
-  margin: 5rem 0;
-}
-
-.who {
-  padding: 2rem;
-  background-color: var(--primary-text-color);
-  width: 50%;
-  border-bottom-left-radius: 2rem;
-  border-top-right-radius: 2rem;
-  min-height: 300px;
-  transition: all 0.2s;
-}
-
-.who:hover {
-  background-color: var(--primary-title-color);
-}
-
-.who .who-container {
-  background-color: white;
-  padding: 2rem;
-  border-bottom-left-radius: 2rem;
-  border-top-right-radius: 2rem;
-  min-height: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 2rem;
-}
-
-.who-container h2 {
-  color: var(--primary-title-color);
-  font-size: 3rem;
-}
-
-.who-container p {
-  color: var(--primary-text-color);
-  font-size: 1.5rem;
-}
-
 /* Oque Fazemos */
 
 .what-do {
@@ -243,7 +193,8 @@
 }
 
 @media (max-width: 1400px) {
-  .who, .what-do {
+  .who,
+  .what-do {
     width: 100%;
   }
 
@@ -266,7 +217,7 @@
     flex-direction: column;
     justify-content: center;
   }
-  
+
   .fundadores {
     padding: 0;
   }
@@ -290,7 +241,6 @@
   .video-about-us {
     width: 100%;
     margin-top: 2rem;
-    
   }
 
   .video-about-us h2 {
@@ -298,7 +248,8 @@
     width: 100%;
   }
 
-  .video, .video .video-container {
+  .video,
+  .video .video-container {
     width: 70%;
     padding: 0;
   }
@@ -334,7 +285,8 @@
     margin-top: 6rem;
   }
 
-  .who-container h2, .what-do-container h2 {
+  .who-container h2,
+  .what-do-container h2 {
     font-size: 2rem;
   }
 
@@ -375,15 +327,18 @@
     font-size: 1.3rem;
   }
 
-  .who .who-container, .what-do .what-do-container {
+  .who .who-container,
+  .what-do .what-do-container {
     padding: 1rem;
   }
 
-  .who-container h2, .what-do-container h2 {
+  .who-container h2,
+  .what-do-container h2 {
     font-size: 1.2rem;
   }
 
-  .who-container p, .what-do-container p {
+  .who-container p,
+  .what-do-container p {
     font-size: 1rem;
   }
 
@@ -429,7 +384,8 @@
     width: 100%;
   }
 
-  .video, .video .video-container {
+  .video,
+  .video .video-container {
     width: 100%;
     padding: 0;
   }

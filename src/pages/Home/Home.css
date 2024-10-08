@@ -130,3 +130,29 @@
     margin-top: 0;
   }
 }
+
+@media (max-width: 300px) {
+  .sobre-nos {
+    padding: 2.5rem 0;
+  }
+
+  .sobre-nos .text-sobre-nos {
+    text-align: left;
+    align-items: start;
+    padding: 1rem;
+  }
+
+  .sobre-nos .text-sobre-nos h2 {
+    font-size: 1.5rem;
+  }
+
+  .sobre-nos .text-sobre-nos p {
+    font-size: 1rem;
+  }
+
+  .sobre-nos .text-sobre-nos a {
+    font-size: 0.8rem;
+    margin-top: 0;
+    width: 100%;
+  }
+}

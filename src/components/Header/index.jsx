@@ -1,33 +1,33 @@
-import './Header.css'
+import { checkLoginState } from "../../utils/helpers";
+import BtnPrimary from "../BtnPrimary";
+import "./Header.scss";
 
 function Header() {
   return (
     <header>
-      <a href="/" style={{display: 'flex', alignItems: 'center'}}>
+      <a href="/">
         <h1>SCHOOL TECH</h1>
       </a>
 
       <nav>
-        <ul>
-          <li>
-            <a href='#'>Cursos</a>
-          </li>
-          {/* <li>
-            <a href="#">Serviços</a>
-          </li> */}
-          <li>
-            <a href="#">Professores</a>
-          </li>
-          <li>
-            <a href='/aboutus' >Sobre Nós</a>
-          </li>
-          <li>
-            <a href="#">Contatos</a>
-          </li>
-          <li id="btn-contact">
-            <a href="#">Agendar Mentoria</a>
-          </li>
-        </ul>
+        <a href="/courses" className="link-nav">
+          Cursos
+        </a>
+        <a href="/aboutus" className="link-nav">
+          Sobre nós
+        </a>
+        <a href="/contact" className="link-nav">
+          Contatos
+        </a>
+        <div className="child-end">
+          <BtnPrimary
+            title="Área do aluno"
+            clickNow={() => {
+              checkLoginState("/area_do_aluno");
+            }}
+          />
+        </div>
+        {/* <a href="#">Serviços</a> */}
       </nav>
     </header>
   );

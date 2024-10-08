@@ -50,3 +50,18 @@
     padding-inline: 1.25rem;
   }
 }
+
+@media (max-width: 300px) {
+  .cursos-container {
+    margin-top: 0;
+  }
+
+  .cursos-container h2 {
+    font-size: 1rem;
+  }
+
+  .cursos {
+    width: 100%;
+    padding-inline: 1.25rem;
+  }
+}

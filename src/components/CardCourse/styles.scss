@@ -1,0 +1,126 @@
+.card-wallper {
+  width: 100%;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 3rem;
+  box-shadow: 0 10px 20px 14px rgba(24, 39, 75, 0.1),
+    0 6px 14px -6px rgba(24, 39, 75, 0.12);
+
+  img {
+    text-align: center;
+    width: 30%;
+  }
+
+  .card {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+    gap: 2rem;
+
+    .profissao-categoria {
+      h3 {
+        font-size: 2rem;
+        color: var(--primary-title-color);
+        font-weight: bold;
+        margin-bottom: 2rem;
+      }
+
+      .profissao-todas-categorias {
+        display: flex;
+        gap: 2rem;
+        p {
+          border: 1px solid black;
+          border-radius: 1rem;
+          padding-block: 0.8rem;
+          width: 10rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0;
+          opacity: 0.6;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+/* @media (max-width: 1300px) {
+  .card-wallper {
+    flex-direction: column;
+    border: none;
+    padding: 0;
+
+    img {
+      width: 50%;
+    }
+  }
+} */
+
+@media (max-width: 900px) {
+  .card-wallper {
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 0;
+
+    .card {
+      .profissao-categoria {
+        .profissao-todas-categorias {
+          gap: 1rem;
+          display: flex;
+          justify-content: space-around;
+        }
+        h3 {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .card-wallper {
+    .card {
+      width: 100%;
+      padding-inline: 2rem;
+
+      .profissao-categoria {
+        .profissao-todas-categorias {
+          p {
+            width: 70%;
+          }
+        }
+
+        h3 {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .card-wallper {
+    .card {
+      padding-inline: 1rem;
+      justify-content: space-between;
+
+      .profissao-categoria {
+        .profissao-todas-categorias {
+          p {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .card-wallper {
+    padding-inline: 10%;
+  }
+}

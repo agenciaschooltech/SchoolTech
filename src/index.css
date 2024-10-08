@@ -3,18 +3,27 @@
 :root {
   --primary-text-color: #a0a0c4;
   --primary-title-color: #2a1f5e;
-  --header-background-color: white;
   --background-primary-color: rgb(17, 23, 45);
   --desc-primary-color: rgb(125, 137, 164);
   --presseble-button-color: rgb(69, 69, 69);
-  --color-border-light: rgba(255, 255, 255, 0.3);
+  --color-border-light: rgb(255, 255, 255);
   --color-border-light-hover: rgb(201, 201, 201);
   --color-dark-primary: #141414;
   --banner-color-normal: rgb(35, 48, 66);
   --banner-color-hover: #233a73;
-  --course-video-list-bg: linear-gradient(0deg, rgb(39, 36, 82) 0%, rgb(16, 26, 56) 50%, rgb(36, 57, 125) 100%);
+  --course-video-list-bg: linear-gradient(
+    0deg,
+    rgb(39, 36, 82) 0%,
+    rgb(16, 26, 56) 50%,
+    rgb(36, 57, 125) 100%
+  );
   --course-video-bg: rgb(19, 23, 64);
-  --course-details-header-bg: linear-gradient(90deg, rgb(36, 57, 125) 0%, rgb(16, 26, 56) 50%, rgb(39, 36, 82) 100%);
+  --course-details-header-bg: linear-gradient(
+    90deg,
+    rgb(36, 57, 125) 0%,
+    rgb(16, 26, 56) 50%,
+    rgb(39, 36, 82) 100%
+  );
 }
 
 * {
@@ -24,7 +33,12 @@
   font-family: sans-serif;
 }
 
-button, input {
+html {
+  scroll-behavior: smooth;
+}
+
+button,
+input {
   outline: none;
   border: none;
 }
@@ -37,7 +51,13 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   cursor: default;
 }
 

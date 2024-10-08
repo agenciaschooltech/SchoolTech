@@ -72,3 +72,24 @@
     font-size: 0.8rem;
   }
 }
+
+@media (max-width: 300px) {
+  .card-wallper {
+    margin: 0;
+    width: 100%;
+    min-width: auto;
+  }
+
+  .card h3 {
+    font-size: 1rem;
+  }
+
+  .card p {
+    font-size: 0.8rem;
+    height: auto;
+  }
+
+  .card a {
+    font-size: 0.8rem;
+  }
+}

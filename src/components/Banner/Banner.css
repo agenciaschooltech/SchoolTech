@@ -6,7 +6,7 @@
   width: 100%;
   height: calc(100dvh - 100px);
   padding: 0 5%;
-  gap: 0.625rem;
+  gap: 10rem;
 }
 
 .banner .text-banner {
@@ -72,8 +72,10 @@
     justify-content: center;
     width: 100%;
     height: calc(100dvh);
+    margin-top: 10rem;
+    gap: 7rem;
   }
-  
+
   .banner .text-banner {
     transform: translate(0, -4rem);
     text-align: center;
@@ -101,8 +103,13 @@
 /* screen width < 1200px */
 
 @media screen and (max-width: 1200px) {
-  .banner .text-banner h2 {
-    font-size: 2.5rem;
+  .banner {
+    margin-top: -5rem;
+    gap: 4rem;
+  }
+
+  .banner .text-banner {
+    padding-inline: 0.2rem;
   }
 
   .banner .text-banner a {
@@ -146,11 +153,11 @@
   }
 
   .banner .text-banner h2 {
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
 
   .banner .text-banner p {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
 
   .banner .text-banner a {

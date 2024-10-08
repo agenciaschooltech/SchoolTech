@@ -1,27 +1,24 @@
-import './Footer.css'
+import "./styles.scss";
+import BtnPrimary from "../BtnPrimary";
+import { checkLoginState } from "../../utils/helpers";
 
 function Footer() {
   return (
     <footer>
-      <div className="text-footer-container">
-        <h2>School-Tech &copy; Desenvolvivo por: <br /> <b>Mundo Inovador</b></h2>
-        <p>Em parceria com: <br /> <b>Lschool Info Tech</b></p>
-      </div>
+      <h2>
+        School-Tech &copy; Desenvolvivo por: <br /> <b>Mundo Inovador</b>
+      </h2>
       <div className="nav-footer">
-        <ul>
-          <li>
-            <a href="#">Cursos</a>
-          </li>
-          <li>
-            <a href="#">Professores</a>
-          </li>
-          <li>
-            <a href="/aboutus">Sobre Nós</a>
-          </li>
-          <li>
-            <a href="#">Contato</a>
-          </li>
-        </ul>
+        <a href="/courses">Cursos</a>
+        <a href="/aboutus">Sobre Nós</a>
+        <a href="/contact">Contato</a>
+        <BtnPrimary
+          title="Área do aluno"
+          colorTitle="#a0a0c4"
+          clickNow={() => {
+            checkLoginState("/area_do_aluno");
+          }}
+        />
       </div>
     </footer>
   );
